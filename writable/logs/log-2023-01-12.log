@@ -1,0 +1,1732 @@
+CRITICAL - 2023-01-12 09:55:49 --> Call to undefined method App\Controllers\ISPController::instanceConcept()
+in APPPATH\Controllers\ISPController.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 09:56:06 --> Call to undefined method App\Controllers\ISPController::instanceConcept()
+in APPPATH\Controllers\ISPController.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 09:57:26 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'control_isp' in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'control_ISP', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'control_isp' in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 09:57:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'control_isp'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `control_ISP` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `sucursal_id`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :sucursal_id:, :observacion:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 09:59:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=5832 in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 171)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost:5432', 'root', '', 'control_ISP', 3306, '', 0)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost:5432', 'root', '', 'control_ISP', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 09:59:54 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `control_ISP` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `sucursal_id`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :sucursal_id:, :observacion:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:49:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:49:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `control_ISP` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `sucursal_id`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :sucursal_id:, :observacion:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:53:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:53:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `control_ISP` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `sucursal_id`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :sucursal_id:, :observacion:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:53:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:53:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `control_ISP` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `sucursal_id`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :sucursal_id:, :observacion:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:53:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:53:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `control_ISP` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `sucursal_id`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :sucursal_id:, :observacion:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:56:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:56:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:56:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:56:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:56:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:56:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 10:57:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'postgres'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'postgres', 'jpadilla', 'postgres', 3306, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 10:57:21 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:04:25 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:04:25 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:06:28 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:06:28 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:07:29 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:07:29 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:07:47 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:07:47 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:08:42 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:08:42 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:09:14 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:09:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:09:26 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:09:26 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 11:12:18 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\ISPController.php(12): CodeIgniter\Model->__construct()
+ 4 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaISP()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:15:04 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:15:04 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 11:21:51 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\ISPController.php(12): CodeIgniter\Model->__construct()
+ 4 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaISP()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:22:23 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:22:23 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:22:57 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:22:57 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:23:03 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:23:03 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:31:00 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:31:00 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:31:12 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:31:12 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:35:59 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:35:59 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:36:28 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:36:28 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:36:37 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:36:37 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:36:44 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:36:44 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:37:30 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:37:30 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:37:46 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:37:46 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 11:38:17 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\ISPController.php(12): CodeIgniter\Model->__construct()
+ 4 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaISP()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 11:38:47 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 53.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\ISPController.php(12): CodeIgniter\Model->__construct()
+ 4 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaISP()
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:39:10 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-01-12 11:39:10 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �Sistemas�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "sucursal" ("sucursal") VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:44:19 --> Error connecting to the database: ErrorException: Uninitialized string offset 0 in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:82
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized s...', 'C:\\xampp\\htdocs...', 82)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 11:44:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Uninitialized string offset 0
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:45:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`id`) REFERENCES `data_control` (`sucursal_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-12 11:45:36 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=5832 in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 171)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'control_isp', 5432, '', 0)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#11 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'control_isp', 5432, '', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#3 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-12 11:45:36 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 3 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:45:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`id`) REFERENCES `data_control` (`sucursal_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-01-12 11:46:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`id`) REFERENCES `data_control` (`sucursal_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 11:46:54 --> Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`id`) REFERENCES `data_control` (`sucursal_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sucursal` (`sucursal`) VALUES (\'Tigo\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sucursal` (`sucursal`) VALUES (\'Tigo\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sucursal` (`sucursal`) VALUES (\'Tigo\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 11:48:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`id`) REFERENCES `data_control` (`sucursal_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 11:48:07 --> Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`id`) REFERENCES `data_control` (`sucursal_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sucursal` (`sucursal`) VALUES (\'Tigo\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sucursal` (`sucursal`) VALUES (\'Tigo\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sucursal` (`sucursal`) VALUES (\'Tigo\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucursal`) VALUES (:sucursal:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ISPController.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 12:09:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`data_control`, CONSTRAINT `data_control_ibfk_1` FOREIGN KEY (`sucursal_id`) REFERENCES `sucursal` (`id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(30): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 12:09:07 --> Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`data_control`, CONSTRAINT `data_control_ibfk_1` FOREIGN KEY (`sucursal_id`) REFERENCES `sucursal` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :observacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ISPController.php(30): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 12:10:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`data_control`, CONSTRAINT `data_control_ibfk_1` FOREIGN KEY (`sucursal_id`) REFERENCES `sucursal` (`id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(30): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 12:10:09 --> Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`data_control`, CONSTRAINT `data_control_ibfk_1` FOREIGN KEY (`sucursal_id`) REFERENCES `sucursal` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :observacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ISPController.php(30): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 12:11:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`data_control`, CONSTRAINT `data_control_ibfk_1` FOREIGN KEY (`sucursal_id`) REFERENCES `sucursal` (`id`) ON UPDATE CASCADE) in C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\caidas-internet\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\caidas-internet\system\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\caidas-internet\system\Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(30): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->add()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 12:11:48 --> Cannot add or update a child row: a foreign key constraint fails (`control_isp`.`data_control`, CONSTRAINT `data_control_ibfk_1` FOREIGN KEY (`sucursal_id`) REFERENCES `sucursal` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (\'1\', \'2023-01-13T01:04\', \'2023-01-10T01:45\', \'prueba\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_control` (`proveedor_id`, `fecha_corte`, `fecha_resuelto`, `observacion`) VALUES (:proveedor_id:, :fecha_corte:, :fecha_resuelto:, :observacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ISPController.php(30): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->add()
+10 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:20:01 --> Undefined variable $proveedor
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedor', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:20:03 --> Undefined variable $proveedor
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedor', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:21:29 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:22:43 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:22:45 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:24:27 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:24:27 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:24:28 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:24:29 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:24:29 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:26:05 --> Undefined variable $data
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:26:57 --> Undefined variable $data
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:26:58 --> Undefined variable $data
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:28:40 --> Undefined variable $proveedor
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedor', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:31:54 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:35:06 --> Undefined variable $title
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(18): view('control_internet')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:35:52 --> Class "App\Models\Proveedor" not found
+in APPPATH\Controllers\ISPController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:36:20 --> Class "App\Models\Proveedor" not found
+in APPPATH\Controllers\ISPController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:36:24 --> Class "App\Models\Proveedor" not found
+in APPPATH\Controllers\ISPController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:36:33 --> Class "App\Models\Proveedor" not found
+in APPPATH\Controllers\ISPController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:38:50 --> Class "App\Models\Proveedor" not found
+in APPPATH\Controllers\ISPController.php on line 18.
+ 1 APPPATH\Controllers\ISPController.php(23): App\Controllers\ISPController->instaciaProvee()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:50:50 --> Class "App\Models\Sucursal" not found
+in APPPATH\Controllers\ISPController.php on line 23.
+ 1 APPPATH\Controllers\ISPController.php(28): App\Controllers\ISPController->instaciaSucursal()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:51:12 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(30): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:53:09 --> Undefined variable $array
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:55:13 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 22.
+ 1 APPPATH\Views\control_internet.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:55:23 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 22.
+ 1 APPPATH\Views\control_internet.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 12:55:54 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [...], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:03:57 --> Undefined variable $sucursales
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sucursales', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:04:06 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:04:18 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:04:38 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:04:45 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:04:46 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:04:58 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:05:14 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 14.
+ 1 APPPATH\Views\control_internet.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:08:03 --> Undefined variable $array
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(32): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:09:46 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 22.
+ 1 APPPATH\Views\control_internet.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:09:51 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 22.
+ 1 APPPATH\Views\control_internet.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
