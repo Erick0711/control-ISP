@@ -25,10 +25,14 @@ class ISPController extends Controller
     }
     function index()
     {
-        $dataSucursal['sucursales'] = $this->instaciaSucursal()->orderBy('id','ASC')->findAll();
-        $datos['proveedores'] = $this->instaciaProvee()->orderBy('id','ASC')->findAll();
-        $array = array($dataSucursal, $datos);
-        echo view('control_internet', $dataSucursal);
+        // $dataSucursal['sucursales'] = $this->instaciaSucursal()->orderBy('id','ASC')->findAll();
+
+        $datos = array(
+            'proveedores' => $this->instaciaProvee()->orderBy('id','ASC')->findAll(),
+            'sucursales' => $this->instaciaSucursal()->orderBy('id','ASC')->findAll()
+        );
+
+        echo view('control_internet', $datos);
     }
 
     // function agregar()

@@ -31,12 +31,12 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN'      => '',
+        'DSN'      => 'pgsql:host=localhost;port=5432;dbname=control_ISP',
         'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'control_isp',
-        'DBDriver' => 'MySQLi',
+        'username' => 'postgres',
+        'password' => 'jpadilla',
+        'database' => 'control_ISP',
+        'DBDriver' => 'Postgre',
         'DBPrefix' => '',
         'pConnect' => true,
         'DBDebug'  => true,
@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 5432,
     ];
 
     /**

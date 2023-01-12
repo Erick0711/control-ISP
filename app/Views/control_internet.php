@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php print_r($sucursales) ?>
+
     <div class="container-lg w-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="row  d-flex justify-content-center flex-column align-items-center">
             <form action="<?= base_url('registrar') ?>" method="POST" class="p-5 w-75 vh-50 border border-dark bg-dark roudend">
@@ -18,7 +18,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <label for="exampleInputEmail1" class="form-label text-white">Proveedor:</label>
-              
+                        <select name="proveedor" id="" class="form-select">
+                            <?php foreach ($proveedores as $proveedor) { ?>
+                                <option value="<?php echo $proveedor['id']?>"><?php echo ucfirst($proveedor['proveedor'])?></option>
+                            <?php } ?>
+                        </select>
                     </div>
                     <div class="col-md-12 mt-2">
                         <label for="exampleInputEmail1" class="form-label text-white">Fecha Corte: </label>
@@ -31,10 +35,9 @@
                     <div class="col-md-12 mt-2">
                         <label for="exampleInputEmail1" class="form-label text-white">Sucursal: </label>
                         <select name="sucursal" id="" class="form-select">
-                            <option value="11">11</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <?php foreach ($sucursales as $sucursal) { ?>
+                                <option value="<?php echo $sucursal['id']?>"><?php echo ucfirst($sucursal['sucursal'])?></option>
+                            <?php } ?>
                         </select>
                     </div>
                     <div class="col-md-12 mt-2">

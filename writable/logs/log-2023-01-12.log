@@ -1730,3 +1730,309 @@ in APPPATH\Views\control_internet.php on line 22.
  7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
  8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:25:58 --> Undefined variable $array
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:26:05 --> Undefined variable $array
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:26:28 --> Undefined variable $array
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:26:40 --> Undefined variable $array
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:26:53 --> Undefined variable $sucursales
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sucursales', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:31:52 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:32:04 --> Undefined variable $proveedores
+in APPPATH\Views\control_internet.php on line 13.
+ 1 APPPATH\Views\control_internet.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proveedores', 'APPPATH\\Views\\control_internet.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\control_internet.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('control_internet', [], true)
+ 5 APPPATH\Controllers\ISPController.php(31): view('control_internet', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:48:07 --> Class "CodeIgniter\Database\pdo\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Database\\pdo\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ISPController.php(18): CodeIgniter\Model->__construct()
+ 5 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaProvee()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:48:11 --> Class "CodeIgniter\Database\pdo\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Database\\pdo\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ISPController.php(18): CodeIgniter\Model->__construct()
+ 5 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaProvee()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:48:24 --> Class "CodeIgniter\Database\Postgres\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('Postgres', 'CodeIgniter\\Database\\Postgres\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ISPController.php(18): CodeIgniter\Model->__construct()
+ 5 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaProvee()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 13:49:09 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->index()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 13:49:09 --> Unable to connect to the database.
+Main connection [Postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "proveedor"
+ORDER BY "id" ASC', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 13:51:20 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->index()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 13:51:20 --> Unable to connect to the database.
+Main connection [Postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "proveedor"
+ORDER BY "id" ASC', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 13:58:58 --> Class "CodeIgniter\Database\postgres\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Database\\postgres\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ISPController.php(18): CodeIgniter\Model->__construct()
+ 5 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaProvee()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 13:59:08 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->index()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 13:59:08 --> Unable to connect to the database.
+Main connection [Postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "proveedor"
+ORDER BY "id" ASC', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 13:59:44 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->index()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 13:59:44 --> Unable to connect to the database.
+Main connection [Postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "proveedor"
+ORDER BY "id" ASC', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-12 14:03:56 --> Class "CodeIgniter\Database\postgres\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Database\\postgres\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(154): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\ISPController.php(18): CodeIgniter\Model->__construct()
+ 5 APPPATH\Controllers\ISPController.php(31): App\Controllers\ISPController->instaciaProvee()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 14:04:41 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->index()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 14:04:41 --> Unable to connect to the database.
+Main connection [Postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "proveedor"
+ORDER BY "id" ASC', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-12 14:04:47 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\caidas-internet\system\Database\Postgre\Connection.php(69): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\caidas-internet\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\caidas-internet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\caidas-internet\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\caidas-internet\system\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\caidas-internet\app\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(925): App\Controllers\ISPController->index()
+#9 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+#10 C:\xampp\htdocs\caidas-internet\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\caidas-internet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-12 14:04:47 --> Unable to connect to the database.
+Main connection [Postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "proveedor"
+ORDER BY "id" ASC', [], false)
+ 3 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(586): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ISPController.php(31): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\ISPController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ISPController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
