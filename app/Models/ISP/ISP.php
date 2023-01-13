@@ -1,5 +1,5 @@
 <?php 
-namespace App\Models;
+namespace App\Models\ISP;
 
 use CodeIgniter\Model;
 
@@ -14,6 +14,7 @@ class ISP extends Model{
         'proveedor_id',
         'fecha_corte',
         'fecha_resuelto',
-        'observacion'
+        'observacion',
+        'tiempo_control'
     ];
 }

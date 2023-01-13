@@ -29,13 +29,13 @@ class Database extends Config
      * The default database connection.
      *
      * @var array
-     */
+     */ //pgsql:host=localhost;port=5432;dbname=control_ISP
     public $default = [
-        'DSN'      => 'pgsql:host=localhost;port=5432;dbname=control_ISP',
+        'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'postgres',
         'password' => 'jpadilla',
-        'database' => 'control_ISP',
+        'database' => 'postgres',
         'DBDriver' => 'Postgre',
         'DBPrefix' => '',
         'pConnect' => true,
@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 5432,
+        'port'     => 5434,
     ];
 
     /**

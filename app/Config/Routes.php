@@ -35,8 +35,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'ISPController::index');
-$routes->post('/registrar', 'ISPController::agregar');
+$routes->get('/', 'ISP\ISPController::index');
+$routes->post('/registrar', 'ISP\ISPController::agregar');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
